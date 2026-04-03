@@ -1,0 +1,150 @@
+#site {
+}
+.site_inner {
+    padding: 16px;
+
+    .site_title {
+        position: sticky;
+        top: 70px;
+        left: 0;
+        width: 48%;
+        height: 5vw;
+
+        font-size: 4vw;
+        font-family: var(--mainEng-font);
+        font-weight: 900;
+        text-transform: uppercase;
+        color: var(--black100);
+        border-bottom: 0.4vw solid var(--black100);
+
+        @media (max-width: 800px) {
+            width: 100%;
+            margin-bottom: 10vw;
+            font-size: 30px;
+            height: auto;
+            background-color: var(--mainBg-color);
+            top: 68px;
+            z-index: 100;
+        }
+    }
+    .site_wrap {
+        .site_item {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            position: sticky;
+            left: 0;
+
+            &.s1 {
+                background-color: var(--subBg500);
+                background: url(../../img/site03.jpg);
+                background-size: cover;
+                top: 180px;
+                @media (max-width: 800px) {
+                    top: 140px;
+                }
+            }
+            &.s2 {
+                background-color: var(--subBg400);
+                background: url(../../img/site02.jpg);
+                background-size: cover;
+                top: 200px;
+                @media (max-width: 800px) {
+                    top: 160px;
+                }
+            }
+            &.s3 {
+                background-color: var(--subBg200);
+                background: url(../../img/site04.jpg);
+                background-size: cover;
+                top: 220px;
+                @media (max-width: 800px) {
+                    top: 180px;
+                }
+            }
+            &.s4 {
+                background-color: var(--subBg100);
+                background: url(../../img/site01.jpg);
+                background-size: cover;
+                top: 240px;
+                @media (max-width: 800px) {
+                    top: 200px;
+                }
+            }
+            .num {
+                font-size: 5vw;
+                line-height: 1;
+                font-weight: 800;
+                font-family: var(--mainNum-font);
+                position: absolute;
+                left: 1vw;
+                top: 2vw;
+                @media (max-width: 800px) {
+                    font-size: 80px;
+                    left: 20px;
+                    top: 20px;
+                }
+            }
+            .text {
+                text-align: center;
+                margin-bottom: 1rem;
+
+                div {
+                    font-size: 3vw;
+                    line-height: 1;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    @media (max-width: 800px) {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .title {
+                font-family: var(--mainKor-font);
+                margin-bottom: 1rem;
+            }
+            .btn {
+                a {
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    color: var(--black200);
+                    font-size: 1rem;
+                    transition: all 0.3s;
+                    padding: 0 2px;
+
+                    &:hover {
+                        color: var(--black);
+                    }
+                }
+            }
+            .site_item .info {
+                position: absolute;
+                bottom: 3%;
+                width: 98%;
+                color: var(--white100);
+                border-top: 1px solid var(--white100);
+                border-bottom: 1px solid var(--white100);
+
+                display: flex;
+                justify-content: space-between;
+
+                @media (max-width: 800px) {
+                    flex-direction: column;
+                    width: 90%;
+                    padding: 5px 0;
+                }
+
+                span {
+                    font-family: var(--mainKor-font);
+                    font-size: 12px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
